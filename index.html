@@ -95,7 +95,25 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form> -->
+
+								<script type="text/javascript">
+								function decode(a) {
+								return a.replace(/[a-zA-Z]/g, function(c){
+								return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+								})
+								}; 
+								function openMailer(element) {
+								var y = decode("znvygb:pbagnpg@jroryvrirvaulcrefcnpr.pbz");
+								element.setAttribute("href", y);
+								element.setAttribute("onclick", "");
+								element.firstChild.nodeValue = "Open email software";
+								};
+								</script>
+
+								<!-- <a id="email" href="" onclick="openMailer(this);">Email: please click</a> -->
+
 								<ul class="icons">
+									<li><a id="email" href="" class="icon solid fa-envelope" onclick="openMailer(this);"><span class="label">Mail: please click</span></a></li>
 									<li><a href="https://webelieveinhyperspace.bandcamp.com" class="icon brands fa-bandcamp "><span class="label">Bandcamp</span></a></li>
 									<li><a href="https://www.facebook.com/webelieveinhyperspace/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.instagram.com/webelieveinhyperspace" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
